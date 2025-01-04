@@ -5,6 +5,7 @@ namespace Reach\StatamicLivewireFilters;
 use Illuminate\Support\Facades\Artisan;
 use Livewire\Livewire;
 use Reach\StatamicLivewireFilters\Http\Livewire\LfCheckboxFilter;
+use Reach\StatamicLivewireFilters\Http\Livewire\LfCount;
 use Reach\StatamicLivewireFilters\Http\Livewire\LfClearAllFilters;
 use Reach\StatamicLivewireFilters\Http\Livewire\LfDateFilter;
 use Reach\StatamicLivewireFilters\Http\Livewire\LfDualRangeFilter;
@@ -56,6 +57,7 @@ class ServiceProvider extends AddonServiceProvider
         Livewire::component('lf-sort', LfSort::class);
         Livewire::component('lf-tags', LfTags::class);
         Livewire::component('lf-url-handler', LfUrlHandler::class);
+        Livewire::component('lf-count', LfCount::class);
         Livewire::component('lf-clear-all-filters', LfClearAllFilters::class);
 
         $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'statamic-livewire-filters');
